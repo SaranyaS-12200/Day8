@@ -1,0 +1,128 @@
+1)Movie
+  a)Write a constructor for the class Movie, which takes a String representing the title of the movie,
+  a String representing the studio, and a String representing the rating as its arguments, and sets the respective class properties to these values.
+
+
+class Movie{
+    constructor(title,studio,rating){
+        this.title=title;
+        this.studio=studio;
+        this.rating=rating;
+ 
+        }
+    }
+    
+ b) The constructor for the class Movie will set the class property rating to "PG" as default when no rating is provided.
+
+        if(ele.rating==="PG")
+             //  return ele; 
+
+c) Write a method getPG, which takes an array of base type Movie as its argument, and returns a new array of only those 
+  movies in the input array with a rating of "PG". You may assume the input array is full of Movie instances. The returned 
+  array need not be full.   
+  
+       getPG(a){
+             var arr=[];
+          a.filter((ele)=>{
+              if(ele.rating==="PG")
+             //  return ele; 
+             arr.push(ele);
+              });
+              return arr;
+        }
+        
+        
+      d) Write a piece of code that creates an instance of the class Movie with the title “Casino Royale”, 
+    the studio “Eon Productions”, and the rating “PG­13”
+    
+    class Movie{
+    constructor(title,studio,rating){
+        this.title=title;
+        this.studio=studio;
+        this.rating=rating;
+ 
+        }
+         getPG(a){
+             var arr=[];
+          a.filter((ele)=>{
+              if(ele.rating==="PG")
+             //  return ele; 
+             arr.push(ele);
+              });
+              return arr;
+        }
+    }
+    var film=new Movie("Casino Royale","Eon Productions","PG13");
+    var film1=new Movie("Casino Royale","Eon Productions","PG");
+    var film2=new Movie("Casino Royale","Eon Productions","PG13");
+    var film3=new Movie("Casino Royale","Eon Productions","PG");
+    
+    var a=[film,film1,film2,film3];
+    console.log(film.getPG(a));
+    
+    
+2)Convert the UML diagram to Typescript class. 
+
+  
+class circle{
+    constructor(radius,color){
+     this.radius=radius;
+     this.color=color;
+    }
+    getRadius(radius){
+        return `radius:${this.radius}`;
+    }
+    getColor(color){
+        return `color:${this.color}`;
+    }
+    getArea(radius){
+         return (3.14*this.radius*this.radius);
+    }
+    getCircumference(radius){
+        return (2*3.14*this.radius);
+    }
+    // set Pi(value){
+    //     return Pi;
+    // }
+}
+// circle.Pi=3.14;
+// console.log(circle.Pi);
+var circle1=new circle(7,'red');
+console.log(circle1);
+
+console.log(circle1.getRadius(7));
+console.log(circle1.getColor('red'));
+console.log(circle1.getArea(7));
+console.log(circle1.getCircumference('7'));
+
+3)Write a “person” class to hold all the details.
+
+  class person{
+    constructor(name,Fathername,Mothername,religion,Mothertongue
+        ,age,DOB,sex,education){
+this.name=name;
+this.Fathername=Fathername;
+this.Mothername=Mothername;
+this.religion=religion;
+this.Mothertongue=Mothertongue;
+this.age=age;
+this.DOB=DOB;
+this.sex=sex;
+this.education=education;
+ }
+}
+person1=new person("Saranya","Sandirasegaran","Suba","Hindu","Tamil",21,"01-02-2000","Female","B.tech");
+console.log(person1.name,person1.Fathername,person1.Mothername,person1.religion,person1.Mothertongue,person1.age,person1.DOB,person1.sex,person1.education);
+console.log(`PERSONAL DETAILS:\n Name:${this.person1.name}\n Fathername:${this.person1.Fathername}\n Mothername:${this.person1.Mothername}\n Religion:${this.person1.religion}\n MotherTongue:${this.person1.age}\n DOB:${this.person1.DOB}\n Sex:${this.person1.sex}\n Education:${this.person1.education}`);
+
+
+4)
+
+
+    
+    
+    
+    
+    
+  
+  
