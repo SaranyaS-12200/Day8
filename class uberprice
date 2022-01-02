@@ -1,0 +1,24 @@
+
+    constructor(timetaken,distanceinKM,basefare,costperKM,costperminute,bookingfee,surgeprice){
+        this.timetaken=timetaken;
+        this.distanceinKM=distanceinKM;
+        this.basefare=basefare;
+        this.costperminute=costperminute;
+        this.bookingfee=bookingfee;
+        this.surgeprice=surgeprice;
+        this.costperKM=costperKM;
+    }
+    gettimetaken(timetaken,costperminute){
+        return `timetravel:${this.timetaken}min RS: ${(this.timetaken*this.costperminute)}`;
+    }
+    getdistanceinkm(distanceinKM,costperKM){
+    return `totalKM:${this.distanceinKM}KM  RS:${(this.distanceinKM*this.costperKM)}`;
+    }
+    getuberprice(basefare,costperKM,distanceinKM,timetaken,costperminute,bookingfee,surgeprice){
+      return `uberprice:RS:${(this.basefare)+(this.timetaken*this.costperminute)+(this.distanceinKM*this.costperKM)+(this.bookingfee)+(this.surgeprice)}`;
+    }
+}
+var travel=new up(45,2,48,10,1,74,144);
+console.log(travel.gettimetaken(45,1));
+console.log(travel.getdistanceinkm(2,10));
+console.log(travel.getuberprice(48,10,2,45,1,74,144));
